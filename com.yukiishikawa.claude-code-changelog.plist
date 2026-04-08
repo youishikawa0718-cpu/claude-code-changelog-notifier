@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.yukiishikawa.claude-code-changelog</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/npx</string>
+        <string>tsx</string>
+        <string>/Users/yukiishikawa/claude-code-changelog-notifier/src/index.ts</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/yukiishikawa/claude-code-changelog-notifier</string>
+    <key>StartInterval</key>
+    <integer>43200</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/yukiishikawa/claude-code-changelog-notifier/logs/stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/yukiishikawa/claude-code-changelog-notifier/logs/stderr.log</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>
