@@ -8,14 +8,13 @@ export async function sendLineMessage(config: Config, text: string): Promise<voi
     return;
   }
 
-  const res = await fetch("https://api.line.me/v2/bot/message/push", {
+  const res = await fetch("https://api.line.me/v2/bot/message/broadcast", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${config.lineChannelAccessToken}`,
     },
     body: JSON.stringify({
-      to: config.lineUserId,
       messages: [{ type: "text", text }],
     }),
   });

@@ -13,7 +13,6 @@ export interface AppState {
 
 export interface Config {
   lineChannelAccessToken: string;
-  lineUserId: string;
   stateFilePath: string;
   githubRepo: string;
   deeplApiKey: string;
